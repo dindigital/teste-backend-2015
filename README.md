@@ -37,7 +37,7 @@ A equipe de criação já fez o layout (fake, este foi comprado), a equipe de fr
 ### Como participar ?
 - Fazer um fork deste repositório
 - Programar para atender os requisitos
-- Fazer um merge request quando finalizar. É importante que conste no merge request as instruçÕes para rodar a aplicação desenolvida. Preferencialmente usando Markdown
+- Fazer um merge request quando finalizar. É importante que conste no merge request as instruções para execultar a aplicação desenolvida (preferencialmente usando markdown).
 
 # Boa sorte
 ## Muito obrigado pelo interesse em participar
