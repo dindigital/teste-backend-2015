@@ -4,7 +4,7 @@ O objetivo do teste é conhecer as habilidades em:
 - Organização (código/arquivos)
 - Controle de versão
 - Análise/Entendimento de requisitos
-- Capricho (atenção com urls, validações, modelagem, nomenclatura, ...)
+- Capricho (atenção com urls, metatags, validações, modelagem, nomenclatura, ...)
 
 ## Importante
 Tudo que for desenvolvido não será utilizado comercialmente e a única intenção é de avaliar o conhecimento atual do interessado.
