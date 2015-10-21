@@ -1,0 +1,7 @@
+Para poder rodar o projeto completo é necessário:
+
+->importar um dump do banco de dados que está na raiz do projeto dentro da pasta "dump_db".
+->alterar as configurações de acesso ao banco no arquivo "application/config/database.php".
+->caso de erro de página não encontrada ou redirecionamento para outro nível, será necessário configurar o a RewriteBase no arquivo ".htaccess".
+
+
