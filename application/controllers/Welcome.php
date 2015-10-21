@@ -22,8 +22,26 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->helper('url');
 
+
+		if(isset($_POST) && !empty($_POST)){
+			$nome = (isset($_POST['app_name'])) ? $_POST['app_name'] : "";
+			$email = (isset($_POST['app_email'])) ? $_POST['app_email'] : "";
+			$telefone = (isset($_POST['app_phone'])) ? $_POST['app_phone'] : "";
+
+			$this->load->database();
+			$this->load->model('model_contatos');
+
+			$retorno = $this->model_contatos->insertContato($nome,$email,$telefone);
+			if($retorno===true){
+				$this->load->view('header');
+				$this->load->view('appontment_success_content');
+				$this->load->view('footer');				
+				return true;
+			}
+		}
+
 		$this->load->view('header');
-		//$this->load->view('home_content');
+		$this->load->view('home_content');
 		//$this->load->view('doctor_content');
 		//$this->load->view('appontment_success_content');
 		$this->load->view('footer');

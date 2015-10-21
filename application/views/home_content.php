@@ -47,18 +47,18 @@
       <div class="col-md-offset-1 col-md-4">
         <div class="appoinment-form">
         <h3> Make an appointment today </h3>
-              <form role="form" onSubmit="return send_email();">
+          <form role="form" method="post">
             <div class="form-group">
               <label for="exampleInputName">Name</label>
-              <input type="text" class="form-control" id="app_name" placeholder="Name" required>
+              <input type="text" class="form-control" id="app_name" name="app_name" placeholder="Name" required>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">E-mail</label>
-              <input type="text" class="form-control" id="app_email" placeholder="E-mail" required>
+              <input type="text" class="form-control" id="app_email" name="app_email" placeholder="E-mail" required>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Phone</label>
-              <input type="text" class="form-control" id="app_phone" placeholder="Phone">
+              <input type="text" class="form-control" id="app_phone" name="app_phone" placeholder="Phone">
             </div>
             <button type="submit" class="btn btn-block btn-orange btn-Submit">SUBMIT</button>
             <small id="mail_msg"></small>
