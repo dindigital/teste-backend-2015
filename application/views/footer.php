@@ -14,12 +14,12 @@
 </div><!-- footer section close -->
 
 <!-- Core JavaScript Files --> 
-<script src="<?php base_url(); ?>includes/js/jquery-1.10.2.js"></script> 
-<script src="<?php base_url(); ?>includes/js/bootstrap.min.js"></script> 
-<script src="<?php base_url(); ?>includes/js/jquery.easing.min.js"></script> 
+<script src="<?php echo site_url(); ?>includes/js/jquery-1.10.2.js"></script> 
+<script src="<?php echo site_url(); ?>includes/js/bootstrap.min.js"></script> 
+<script src="<?php echo site_url(); ?>includes/js/jquery.easing.min.js"></script> 
 <!-- Custom Theme JavaScript --> 
-<script src="<?php base_url(); ?>includes/js/scrolling-nav.js"></script> 
-<script src="<?php base_url(); ?>includes/js/owl.carousel.js"></script> 
+<script src="<?php echo site_url(); ?>includes/js/scrolling-nav.js"></script> 
+<script src="<?php echo site_url(); ?>includes/js/owl.carousel.js"></script> 
 
 <script>
   $("#owl-demo").owlCarousel({

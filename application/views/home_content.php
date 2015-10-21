@@ -10,7 +10,7 @@
         <p> OR </p>
         <h1 class="call-num"> 1-800-643-4500 </h1>
       </div>
-      <div class="col-md-7"> <img src="<?php base_url(); ?>includes/image/pic-1.png" class="img-responsive" alt="doctor"> </div>
+      <div class="col-md-7"> <img src="<?php echo site_url(); ?>includes/image/pic-1.png" class="img-responsive" alt="doctor"> </div>
     </div>
   </div>
 </section>
@@ -126,26 +126,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 doctor-profile"> <div class="bg-profile"> <img src="<?php base_url(); ?>includes/image/team-3.png" alt=""></div>
-        <h3> Dr. Rodney Stratton </h3>
-        <strong>Physiotherapist     |      (985) 123-3410 </strong>
-        <p> Sed tristique turpis a libero malesuada, tincidunt elementum mauris euismod. </p>
-        <div class="social"> <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a> <a href="#"><i class="fa fa-linkedin-square fa-size"> </i> </a> <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> </div>
-      </div>
-      <div class="col-md-4 doctor-profile">
-      <div class="bg-profile"> <img src="<?php base_url(); ?>includes/image/team-1.png" alt=""></div>
-        <h3> Robert Brown, Prof. </h3>
-        <strong>Anesthesiologist    |    (985) 231-1234</strong>
-        <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat </p>
-                <div class="social"> <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a> <a href="#"><i class="fa fa-linkedin-square fa-size"> </i> </a> <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> </div>
-      </div>
-      <div class="col-md-4 doctor-profile"> <div class="bg-profile"> <img src="<?php base_url(); ?>includes/image/team-2.png" alt=""></div>
-        <h3> Dr. Lita White </h3>
-        <strong> Neurosurgeon   |    (985) 231-1234</strong>
-        <p> Maecenas commodo turpis adipiscing, malesuada ipsum in, molestie magna. </p>
-               <div class="social"> <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a> <a href="#"><i class="fa fa-linkedin-square fa-size"> </i> </a> <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> </div>
-      </div>
       
+      <?php if(isset($arr_medicos)): ?>
+        <?php foreach($arr_medicos as $medico) : ?>
+        <div class="col-md-4 doctor-profile"> <div class="bg-profile"> <a href='<?php echo site_url(); ?>doctor/view/<?php echo $medico->id; ?>'><img src="<?php echo site_url(); ?>fotos/medicos/<?php echo $medico->foto; ?>" alt="<?php echo $medico->nome; ?>" width="400" /></a></div>
+          <h3> Dr. <?php echo $medico->nome; ?> </h3>
+          <strong><?php echo $medico->especialidade; ?>     |      <?php echo $medico->celular; ?> </strong>
+          <p> <?php echo $medico->descricao; ?> </p>
+          <div class="social"> <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a> <a href="#"><i class="fa fa-linkedin-square fa-size"> </i> </a> <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> </div>
+        </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </div>
   </div>
   <div class="testimonials"><!-- Testimonials start -->
@@ -157,12 +148,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2"> <img src="<?php base_url(); ?>includes/image/men.jpg" class="img-circle client-circle" alt="pic-4"> </div>
+        <div class="col-md-2"> <img src="<?php echo site_url(); ?>includes/image/men.jpg" class="img-circle client-circle" alt="pic-4"> </div>
         <div class="col-md-4">
           <p> “As a caretaker, I was unfamiliar with how Medicare works. The agent I spoke with helped me determine which plan would be best.” </p>
           <span> - Brandon Feil <a href="#"> ( Patient ) </a> </span>
         </div>
-        <div class="col-md-2"> <img src="<?php base_url(); ?>includes/image/grl.jpg" class="img-circle client-circle" alt="pic-4"> </div>
+        <div class="col-md-2"> <img src="<?php echo site_url(); ?>includes/image/grl.jpg" class="img-circle client-circle" alt="pic-4"> </div>
         <div class="col-md-4">
           <p> “As a caretaker, I was unfamiliar with how Medicare works. The agent I spoke with helped me determine which plan would be best.”</p>
           <span> - Kiley Ellis <a href="#"> ( Patient ) </a> </span>
@@ -179,12 +170,12 @@
     </div>
     <div class="row">
       <div id="owl-demo" class="client-logo">
-        <div class="item col-md-3"><img src="<?php base_url(); ?>includes/image/logo-3.png" alt="client logo"></div>
-        <div class="item col-md-3"><img src="<?php base_url(); ?>includes/image/logo-2.png" alt="client logo"></div>
-        <div class="item col-md-3"><img src="<?php base_url(); ?>includes/image/logo-3.png" alt="client logo"></div>
-        <div class="item col-md-3"><img src="<?php base_url(); ?>includes/image/logo-2.png" alt="client logo"></div>
-        <div class="item col-md-3"><img src="<?php base_url(); ?>includes/image/logo-3.png" alt="client logo"></div>
-        <div class="item col-md-3"><img src="<?php base_url(); ?>includes/image/logo-2.png" alt="client logo"></div>
+        <div class="item col-md-3"><img src="<?php echo site_url(); ?>includes/image/logo-3.png" alt="client logo"></div>
+        <div class="item col-md-3"><img src="<?php echo site_url(); ?>includes/image/logo-2.png" alt="client logo"></div>
+        <div class="item col-md-3"><img src="<?php echo site_url(); ?>includes/image/logo-3.png" alt="client logo"></div>
+        <div class="item col-md-3"><img src="<?php echo site_url(); ?>includes/image/logo-2.png" alt="client logo"></div>
+        <div class="item col-md-3"><img src="<?php echo site_url(); ?>includes/image/logo-3.png" alt="client logo"></div>
+        <div class="item col-md-3"><img src="<?php echo site_url(); ?>includes/image/logo-2.png" alt="client logo"></div>
       </div>
     </div>
   </div><!-- Client close -->

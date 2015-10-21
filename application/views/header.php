@@ -7,12 +7,12 @@
 <meta name="author" content="">
 <title>Wealth.life | Medical Landing Page Template</title>
 <!-- Bootstrap Core CSS -->
-<link href="<?php base_url(); ?>includes/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="<?php base_url(); ?>includes/css/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="<?php base_url(); ?>includes/css/font-awesome.css" type="text/css">
+<link href="<?php echo site_url(); ?>includes/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="<?php echo site_url(); ?>includes/css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<?php echo site_url(); ?>includes/css/font-awesome.css" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <!-- your favicon icon link -->
-<link rel="shortcut icon" href="<?php base_url(); ?>includes/image/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo site_url(); ?>includes/image/favicon.ico" type="image/x-icon" />
 
 <!-- Custom CSS -->
 
