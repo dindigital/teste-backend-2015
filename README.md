@@ -1,3 +1,16 @@
+##### Para criar as tabelas do banco de dados:
+```bat
+php artisan migrate
+```
+
+##### Para criar as cargas frias:
+```bat
+php artisan db:seed
+```
+========================================================================
+
+
+
 # Teste - Backend - 2015
 O objetivo do teste é conhecer as habilidades em:
 - Programação

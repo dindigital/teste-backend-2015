@@ -2,15 +2,12 @@
 
 namespace App\Http\Controllers;
 
-//use App\Http\Requests;
 use App\Http\Controllers\Controller;
-//use Request;
 use App\Medico;
 use Illuminate\Html\FormFacade;
 use Illuminate\Html\HtmlFacade;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-//use Illuminate\Routing\Controller
 
 class MedicoController extends Controller
 {
@@ -38,6 +35,11 @@ class MedicoController extends Controller
         return view('doctor.doctor', compact('medico'));
     }
 
+    /**
+    * Display all resource()
+    *
+    * @return \Illuminate\Http\Response
+    */
     public function showAll()
     {
         $medicos=Medico::all();

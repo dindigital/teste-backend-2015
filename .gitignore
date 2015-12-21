@@ -7,3 +7,6 @@ storage/
 .env.php
 .env
 .env.example
+
+todo
+confg/mail.php

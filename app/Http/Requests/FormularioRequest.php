@@ -36,10 +36,15 @@ class FormularioRequest extends Request
         return [
             'nome'      => 'required', 
             'email'     => 'required|email', 
-            'telefone'  => 'required|numeric|min:8|max:11', 
+            'telefone'  => 'required|numeric', 
         ];
     }
 
+    /**
+    * Get the messages of the rules
+    *
+    * @return array
+    */
     public function messages()
     {
         return [
@@ -47,9 +52,7 @@ class FormularioRequest extends Request
           'email.required'    => 'O email é obrigatorio.',  
           'email.email'       => 'O email deve ser um email valido.',   
           'telefone.required' => 'O telefone é obrigatorio.',
-          'telefone.numeric'  => 'O telefone só pode conter números.',
-          'telefone.min'      => 'O telefone não pode conter menos de :min caracteres.',
-          'telefone.max'      => 'O telefone não pode conter mais do que :max caracteres.'
+          'telefone.numeric'  => 'O telefone só pode conter números.'
         ];
     }
 }

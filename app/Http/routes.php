@@ -19,9 +19,6 @@
 //	return view('index');
 //});
 
-
-//Route::when('*', 'csrf', array('post', 'put', 'delete'));
-
 Route::get('doctor/{id}', 'MedicoController@show');
 
 Route::get('appontment_success','FormularioController@index');
