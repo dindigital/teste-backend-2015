@@ -1,16 +1,3 @@
-##### Para criar as tabelas do banco de dados:
-```bat
-php artisan migrate
-```
-
-##### Para criar as cargas frias:
-```bat
-php artisan db:seed
-```
-========================================================================
-
-
-
 # Teste - Backend - 2015
 O objetivo do teste é conhecer as habilidades em:
 - Programação
@@ -51,6 +38,24 @@ A equipe de criação já fez o layout (fake, este foi comprado), a equipe de fr
 - Fazer um fork deste repositório
 - Programar para atender os requisitos
 - Fazer um merge request quando finalizar. É importante que conste no merge request as instruções para execultar a aplicação desenolvida (preferencialmente usando markdown).
+
+
+### Instruções para execultar a aplicação desenolvida
+
+##### Para criar as tabelas do banco de dados:
+```bat
+php artisan migrate
+```
+
+##### Para criar as cargas frias:
+```bat
+php artisan db:seed
+```
+
+#### Para rodar a aplicação:
+```bat
+php artisan serve
+```
 
 # Boa sorte
 ## Muito obrigado pelo interesse em participar

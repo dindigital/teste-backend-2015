@@ -9,4 +9,3 @@ storage/
 .env.example
 
 todo
-confg/mail.php
