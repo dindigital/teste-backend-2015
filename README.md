@@ -40,7 +40,7 @@ A equipe de criação já fez o layout (fake, este foi comprado), a equipe de fr
 - Fazer um merge request quando finalizar. É importante que conste no merge request as instruções para execultar a aplicação desenolvida (preferencialmente usando markdown).
 
 
-### Instruções para execultar a aplicação desenolvida
+### Instruções para executar a aplicação desenvolvida
 
 ##### Para criar as tabelas do banco de dados:
 ```bat
