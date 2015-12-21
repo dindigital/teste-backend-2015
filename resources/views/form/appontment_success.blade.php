@@ -1,5 +1,5 @@
-@extends('index')
 @include('partials.header')
+@extends('index')
 
 <section id="about" class="about-section"><!-- about start -->
   <div class="container">

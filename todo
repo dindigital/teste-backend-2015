@@ -7,3 +7,11 @@ Verificar a validação do telefone
 Instruções para execultar a aplicação desenolvida (preferencialmente usando markdown)
 
 Melhorar o extend (por causa do email)
+
+Remover esse arquivo
+
+colocar a Imagem no doctor/{id}
+
+
+
+"Para executar a aplicação precisa alterar o arquivo 'config/mail.php' para uma configuração de"
