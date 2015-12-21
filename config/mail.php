@@ -8,7 +8,7 @@ return [
 'from' => array('address' => 'email@gmail.com', 'name' => "Remetente"),
 'encryption' => 'tls',
 'username' => 'ericas.rodriguess@gmail.com',
-'password' => 'Kiramenicase13',
+'password' => '',
 'sendmail' => '/usr/sbin/sendmail -bs',
 'pretend' => false,
 
