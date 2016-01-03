@@ -22,11 +22,15 @@ TODO
 
 ======================================
 
-
 instalar o PHP
 
-instalar o composer?
+instalar o composer
 
+instalar o mysql
+
+instalar o laravel
+
+======
 
 Para rodar a aplicação você pode criar um virtual host ou no cmd colocar o comando "php artisan serve"
 
@@ -45,6 +49,7 @@ php artisan make:seeder MedicoSeeder
 
 
 http://blog.vagnerdocarmo.com.br/laravel-5-instalacao-no-windows/
+http://magazine.softerize.com.br/tutoriais/php/laravel/iniciando-um-novo-projeto-laravel
 
 "Para executar a aplicação precisa alterar o arquivo '.env'"
 

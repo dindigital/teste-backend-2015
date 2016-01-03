@@ -42,6 +42,15 @@ A equipe de criação já fez o layout (fake, este foi comprado), a equipe de fr
 
 ### Instruções para execultar a aplicação desenolvida
 
+##### Pré Requisitos
+
+Para que possa executar a aplcação, você vai precisar dos seguintes componentes instalados.
+- PHP >= 5.3.7
+- MySQL
+- Apache (ou outro servidor)
+	- mod_rewrite habilitado
+- Composer
+
 ##### Para criar as tabelas do banco de dados:
 ```bat
 php artisan migrate
@@ -58,4 +67,4 @@ php artisan serve
 ```
 
 # Boa sorte
-## Muito obrigado pelo interesse em participar
+## Muito obrigado pela oportunidade em participar
