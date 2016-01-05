@@ -18,20 +18,24 @@ class MedicoSeeder extends Seeder
     		'celular' 		=> '(985) 123-3410',
     		'descricao'		=> 'Sed tristique turpis a libero malesuada, tincidunt elementum mauris euismod.',
     		'foto'			=> 'team-1.png'
-    		],
-    		[
-    		'nome' 			=> 'Dr. Lita White',
-    		'especialidade' => 'Neurosurgeon',
-    		'celular' 		=> '(985) 231-1234',
-    		'descricao'		=> 'Maecenas commodo turpis adipiscing, malesuada ipsum in, molestie magna.',
-    		'foto'			=> 'team-2.png'
-    		],
-    		[
-    		'nome' 			=> 'Robert Brown, Prof.',
-    		'especialidade' => 'Anesthesiologist',
-    		'celular' 		=> '(985) 231-1234',
-    		'descricao'		=> 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat',
-    		'foto'			=> 'team-3.png'
     		]);
+
+        Medico::create(
+            [
+            'nome'          => 'Dr. Lita White',
+            'especialidade' => 'Neurosurgeon',
+            'celular'       => '(985) 231-1234',
+            'descricao'     => 'Maecenas commodo turpis adipiscing, malesuada ipsum in, molestie magna.',
+            'foto'          => 'team-2.png'
+            ]);
+
+        Medico::create(
+            [
+            'nome'          => 'Robert Brown, Prof.',
+            'especialidade' => 'Anesthesiologist',
+            'celular'       => '(985) 231-1234',
+            'descricao'     => 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat',
+            'foto'          => 'team-3.png'
+            ]);
     }
 }

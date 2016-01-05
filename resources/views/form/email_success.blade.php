@@ -4,9 +4,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-      	<h1>Olá {{ $formulario->nome }},</h1>
+      	<h1>Olá,</h1>
         <h2>Formulário encaminhado com sucesso</h2>
-        <p class="lead"> Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Various versions have evolved over the years, sometimes on purpose </p>      
+        <p class="lead"> Nome: {{ $formulario->nome }} </p>
+        <p class="lead"> E-mail: {{ $formulario->email }} </p>
+        <p class="lead"> Phone: {{ $formulario->telefone }} </p>     
       </div>
     </div>
   </div>

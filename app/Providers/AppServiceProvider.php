@@ -14,6 +14,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        $this->publishes([
+        __DIR__.'/config/myconfig.php' => config_path('myconfig.php'),
+        ]);
     }
 
     /**

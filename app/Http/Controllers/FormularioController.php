@@ -7,13 +7,14 @@ use App\Http\Controllers\Controller;
 use App\Formulario;
 use Mail;
 use App\Http\Requests\FormularioRequest;
+use Illuminate\Contracts\Config;
 
 class FormularioController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return 
      */
     public function index()
     {
@@ -23,7 +24,7 @@ class FormularioController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @return \Illuminate\Http\Response
+     * @return \App\Http\Requests\FormularioReques
      */
     public function store(FormularioRequest $request)
     {
@@ -33,12 +34,16 @@ class FormularioController extends Controller
         return redirect('appontment_success');   
     }
 
-    public function enviarEmail($formulario)
+    /**
+    * Envia o email para o administrador do sistema
+    *
+    */
+    private function enviarEmail($formulario)
     {
         Mail::send('form.email_success', ['formulario' => $formulario], 
             function ($message) use ($formulario) {
             $message->from('ericas.rodriguess@gmail.com', 'Érica Rodrigues');
-            $message->to($formulario->email);
+            $message->to(config('myconfig.administrador_mail'));
             $message->subject("Formulário encaminhado com Sucesso!");
         });
     }
