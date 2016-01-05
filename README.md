@@ -60,6 +60,10 @@ Para que possa executar a aplcação, você vai precisar dos seguintes component
 	- mod_rewrite habilitado
 - Composer
 
+##### Configurar o Ambiente de desenvolvimento
+
+Para configurar o ambiente de desenvolvimento, precisa alterar o arquivo .env com os dados do envio de email e do banco de dados.
+
 ##### Para criar as tabelas do banco de dados:
 ```bat
 php artisan migrate
