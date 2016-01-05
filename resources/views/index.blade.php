@@ -31,6 +31,9 @@
 {!! Html::script('js/scrolling-nav.js') !!}
 {!! Html::script('js/owl.carousel.js') !!}
 
+{!! Html::script('js/jquery.mask.min.js') !!}
+
+
 <script>
   $("#owl-demo").owlCarousel({
     autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -38,6 +41,9 @@
     itemsDesktop : [1199,3],
     itemsDesktopSmall : [979,3]
   });
+
+	$("#telefone").mask("(00) 0000-00009");
+
 </script>
 
 </body>

@@ -24,7 +24,7 @@
 </div>
 <div class="form-group">
     {!! Form::label('Phone', 'Phone:') !!}
-    {!! Form::text('telefone',null,['class'=>'form-control', 'required']) !!}
+    {!! Form::text('telefone',null,['class'=>'form-control', 'id' => 'telefone',  'pattern' => '\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}', 'required']) !!}
 </div>
 <div class="form-group">
     {!! Form::submit('Save', ['class' => 'btn btn-primary form-control']) !!}

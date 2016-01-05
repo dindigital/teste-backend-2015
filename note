@@ -1,0 +1,34 @@
+Mudar o arquivo .env com os dados do envio de email e do banco de dados
+
+
+
+php artisan make:migration nomedatabela
+
+php artisan migrate:install
+
+php artisan migrate
+
+php artisan make:seeder MedicoSeeder
+
+
+
+http://blog.vagnerdocarmo.com.br/laravel-5-instalacao-no-windows/
+http://magazine.softerize.com.br/tutoriais/php/laravel/iniciando-um-novo-projeto-laravel
+
+"Para executar a aplicação precisa alterar o arquivo '.env'"
+
+
+
+Para configurar host, o username, e o password para poder enviar o email
+
+
+Gerar o banco de dados
+
+
+
+
+Para criar as tabelas do banco de dados:
+php artisan migrate
+
+Para criar as cargas frias:
+php artisan db:seed

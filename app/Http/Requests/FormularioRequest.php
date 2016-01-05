@@ -36,7 +36,7 @@ class FormularioRequest extends Request
         return [
             'nome'      => 'required', 
             'email'     => 'required|email', 
-            'telefone'  => 'required|numeric', 
+            'telefone'  => 'required|regex:/^\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}$/', 
         ];
     }
 
@@ -52,7 +52,8 @@ class FormularioRequest extends Request
           'email.required'    => 'O email é obrigatorio.',  
           'email.email'       => 'O email deve ser um email valido.',   
           'telefone.required' => 'O telefone é obrigatorio.',
-          'telefone.numeric'  => 'O telefone só pode conter números.'
+          'telefone.numeric'  => 'O telefone só pode conter números.',
+          'telefone.regex'    => 'O telefone está no formato inválido'
         ];
     }
 }
