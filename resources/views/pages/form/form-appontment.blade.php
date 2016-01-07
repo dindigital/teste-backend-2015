@@ -27,10 +27,8 @@
 </div>
 
 @section('script')
-   @parent
-
+  <script>
   $("#telefone").mask("(00) 0000-00009");
-
-  alert('teste2');
-@stop
+</script>
+@append
 
