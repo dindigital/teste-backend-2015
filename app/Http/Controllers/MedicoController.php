@@ -19,7 +19,7 @@ class MedicoController extends Controller
     public function index()
     {
         $medicos=Medico::all();
-        return view('home.home', compact('medicos'));
+        return view('pages.home.home', compact('medicos'));
     }
 
 
@@ -32,7 +32,7 @@ class MedicoController extends Controller
     public function show($id)
     {
         $medico=Medico::find($id);
-        return view('doctor.doctor', compact('medico'));
+        return view('pages.doctor.doctor', compact('medico'));
     }
 
     /**

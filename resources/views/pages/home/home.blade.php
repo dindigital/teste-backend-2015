@@ -1,6 +1,6 @@
-@include('partials.header')
-@extends('index')
+@extends('layouts.default')
 
+@section('content')
 <section id="intro" class="intro-section"><!-- intro start -->
   <div class="container">
     <div class="row">
@@ -45,10 +45,7 @@
           </div>
       </div>
       </div>
-      
-        @include('form.form-appontment')
-      
-      </div>
+       @include('pages.form.form-appontment')     
     </div>
   </div>
 </section>
@@ -109,7 +106,7 @@
       </div>
     </div>
     <div class="row">
-        @include('doctor.show')
+        @include('pages.doctor.show')        
     </div>
   </div>
   <div class="testimonials"><!-- Testimonials start -->
@@ -191,19 +188,16 @@
       </div>
     </div>
   </div>
-
 </section><!-- contact section close -->
-<div class="footer"><!-- footer section start -->
-  <div class="container">
-    <div class="row ft">
-      <div class="col-md-9">
-        <p> © Copyright 2014. All Rights Reserved by Wealth.life </p>
-      </div>
-      <div class="col-md-3"><p> <a href="#"> <i class="fa fa-facebook-square fa-size social-icon"> </i></a>
-      <a href="#"> <i class="fa  fa-twitter-square  fa-size social-icon"> </i> </a>
-      <a href="#"><i class="fa fa-google-plus-square fa-size social-icon"> </i></a> 
-      <a href="#"><i class="fa fa-flickr fa-size social-icon"> </i></a> 
-      <a href="#"><i class="fa fa-pinterest-square fa-size social-icon"> </i> </a></p></div>
-    </div>
-  </div>
-</div><!-- footer section close -->
+@stop
+
+@section('script')
+  $("#owl-demo").owlCarousel({
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+    items : 4,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3]
+  });
+
+alert('teste');
+@stop

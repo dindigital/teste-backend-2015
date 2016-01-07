@@ -1,6 +1,6 @@
-@include('partials.header')
-@extends('index')
+@extends('layouts.default')
 
+@section('content')
 <section id="about" class="about-section"><!-- about start -->
   <div class="container">
     <div class="row">
@@ -11,3 +11,4 @@
     </div>
   </div>
 </section>
+@stop

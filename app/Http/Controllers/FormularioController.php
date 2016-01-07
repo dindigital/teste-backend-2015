@@ -18,7 +18,7 @@ class FormularioController extends Controller
      */
     public function index()
     {
-        return view('form.appontment_success');
+        return view('pages.form.appontment_success');
     }
 
     /**
@@ -40,7 +40,7 @@ class FormularioController extends Controller
     */
     private function enviarEmail($formulario)
     {
-        Mail::send('form.email_success', ['formulario' => $formulario], 
+        Mail::send('pages.form.email_success', ['formulario' => $formulario], 
             function ($message) use ($formulario) {
             $message->from('ericas.rodriguess@gmail.com', 'Érica Rodrigues');
             $message->to(config('myconfig.administrador_mail'));

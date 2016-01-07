@@ -27,4 +27,4 @@ Route::get('/', 'MedicoController@index');
 
 Route::post('store', 'FormularioController@store');
 
-Route::get('enviarEmail/{email}', 'FormularioController@enviarEmail');
+//Route::get('enviarEmail/{email}', 'FormularioController@enviarEmail');
