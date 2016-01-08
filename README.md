@@ -53,7 +53,7 @@ Para que possa executar a aplicação, você vai precisar dos seguintes componen
 
 ##### Configurações
 
-- [ ] Criar o Database no banco de dados
+- [ ] Criar o banco de dados no MySQL
 - [ ] Alterar o arquivo .env com os dados do envio de email, acesso ao banco de dados e o email do administrador.
 
 ##### Para criar as tabelas do banco de dados:
