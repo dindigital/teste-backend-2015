@@ -1,4 +1,4 @@
-<div class="footer"><!-- footer section start -->
+
   <div class="container">
     <div class="row ft">
       <div class="col-md-9">
@@ -11,4 +11,3 @@
       <a href="#"><i class="fa fa-pinterest-square fa-size social-icon"> </i> </a></p></div>
     </div>
   </div>
-</div><!-- footer section close -->

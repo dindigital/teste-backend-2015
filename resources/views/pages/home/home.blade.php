@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('index')
 
 @section('content')
 <section id="intro" class="intro-section"><!-- intro start -->

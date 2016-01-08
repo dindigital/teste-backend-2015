@@ -9,6 +9,13 @@ use App\Http\Requests\Request;
 class FormularioRequest extends Request
 {
     
+     /**
+     * The URI to redirect to if validation fails
+     *
+     * @var string
+     */
+    protected $redirect = '/#about';
+
     /**
      * Determine if the user is authorized to make this request.
      *

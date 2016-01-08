@@ -14,7 +14,7 @@ class MedicoController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return 
      */
     public function index()
     {
@@ -27,7 +27,7 @@ class MedicoController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return 
      */
     public function show($id)
     {
@@ -38,7 +38,7 @@ class MedicoController extends Controller
     /**
     * Display all resource()
     *
-    * @return \Illuminate\Http\Response
+    * @return
     */
     public function showAll()
     {

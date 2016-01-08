@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-//use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Formulario;
 use Mail;
@@ -24,7 +23,7 @@ class FormularioController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @return \App\Http\Requests\FormularioReques
+     * @return 
      */
     public function store(FormularioRequest $request)
     {

@@ -26,5 +26,3 @@ Route::get('appontment_success','FormularioController@index');
 Route::get('/', 'MedicoController@index');
 
 Route::post('store', 'FormularioController@store');
-
-//Route::get('enviarEmail/{email}', 'FormularioController@enviarEmail');

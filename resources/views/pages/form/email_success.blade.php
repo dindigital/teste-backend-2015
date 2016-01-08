@@ -1,4 +1,3 @@
-<section id="about" class="about-section"><!-- about start -->
   <div class="container">
     <div class="row">
       <div class="col-md-7">
@@ -10,4 +9,3 @@
       </div>
     </div>
   </div>
-</section>

@@ -1,6 +1,6 @@
 Mudar o arquivo .env com os dados do envio de email e do banco de dados
 
-
+http://www.omnibees.com/novo3/sobre.html#trabalho-conosco
 
 php artisan make:migration nomedatabela
 
@@ -32,3 +32,15 @@ php artisan migrate
 
 Para criar as cargas frias:
 php artisan db:seed
+
+
+
+==============
+
+- aplicação 
+
+Apache
+
+Configurar
+
+Apache (ou outro servidor) - *precisa configurar o virtual host
