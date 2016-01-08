@@ -44,15 +44,6 @@ A equipe de criação já fez o layout (fake, este foi comprado), a equipe de fr
 
 ##### Pré Requisitos
 
-Para que possa executar a aplcação, você vai precisar dos seguintes componentes instalados.
-- PHP >= 5.3.7
-- MySQL
-- Apache (ou outro servidor)
-	- mod_rewrite habilitado
-- Composer
-
-##### Pré Requisitos
-
 Para que possa executar a aplicação, você vai precisar dos seguintes componentes instalados.
 - PHP >= 5.3.7
 - MySQL
