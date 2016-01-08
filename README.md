@@ -53,16 +53,17 @@ Para que possa executar a aplcação, você vai precisar dos seguintes component
 
 ##### Pré Requisitos
 
-Para que possa executar a aplcação, você vai precisar dos seguintes componentes instalados.
+Para que possa executar a aplicação, você vai precisar dos seguintes componentes instalados.
 - PHP >= 5.3.7
 - MySQL
-- Apache (ou outro servidor)
+- Apache (ou outro servidor) - *precisa configurar o virtual host
 	- mod_rewrite habilitado
 - Composer
 
-##### Configurar o Ambiente de desenvolvimento
+##### Configurações
 
-Para configurar o ambiente de desenvolvimento, precisa alterar o arquivo .env com os dados do envio de email e do banco de dados.
+- [ ] Criar o Database no banco de dados
+- [ ] Alterar o arquivo .env com os dados do envio de email, acesso ao banco de dados e o email do administrador.
 
 ##### Para criar as tabelas do banco de dados:
 ```bat
@@ -75,6 +76,8 @@ php artisan db:seed
 ```
 
 #### Para rodar a aplicação:
+
+Para rodar a aplicação você pode acessar pela url configurada no virtual host ou pelo comando a baixo:
 ```bat
 php artisan serve
 ```
