@@ -4,15 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Medico;
-use Illuminate\Html\FormFacade;
-use Illuminate\Html\HtmlFacade;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class MedicoController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all resource
      *
      * @return 
      */
@@ -33,16 +29,5 @@ class MedicoController extends Controller
     {
         $medico=Medico::find($id);
         return view('pages.doctor.doctor', compact('medico'));
-    }
-
-    /**
-    * Display all resource()
-    *
-    * @return
-    */
-    public function showAll()
-    {
-        $medicos=Medico::all();
-        return view('index', compact('medicos'));
     }
 }
