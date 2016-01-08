@@ -74,7 +74,7 @@ php artisan serve
 ```
 
 
-Nota: **Para mais informação acessar a documentação do framework lavavel: https://laravel.com/docs/5.2**
+Nota: **Para mais informações acessar a documentação do framework lavavel: https://laravel.com/docs/5.2**
 
 # Boa sorte
 ## Muito obrigado pela oportunidade em participar
