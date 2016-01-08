@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Volto Logo</title>
+        <title>OPS! Deu algum erro.</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -40,7 +40,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Volto Logo</div>
+                <div class="title">OPS! Deu algum erro.</div>
             </div>
         </div>
     </body>

@@ -16,8 +16,7 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        HttpException::class,
-        ModelNotFoundException::class,
+        'Symfony\Component\HttpKernel\Exception\HttpException'
     ];
 
     /**
@@ -42,8 +41,20 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($e instanceof ModelNotFoundException) {
-            $e = new NotFoundHttpException($e->getMessage(), $e);
+        //if ($e instanceof ModelNotFoundException) {
+        //    $e = new NotFoundHttpException($e->getMessage(), $e);
+        //}
+
+        //return parent::render($request, $e);
+
+
+        if ($this->isHttpException($e))
+        {
+            if($e->getStatusCode() == 404 || $e->getStatusCode() == 405 || $e->getStatusCode() == 503)
+            {
+                return $this->renderHttpException($e);
+            }
+            return response()->view('errors.default', ['exception' => $e], $e->getStatusCode());
         }
 
         return parent::render($request, $e);
