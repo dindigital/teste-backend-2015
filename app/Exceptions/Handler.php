@@ -57,7 +57,6 @@ class Handler extends ExceptionHandler
             return response()->view('errors.default', ['exception' => $e], $e->getStatusCode());
         }
 
-        return parent::render($request, $e);
-
+        return response()->view('errors.default', ['exception' => $e], 500);
     }
 }
