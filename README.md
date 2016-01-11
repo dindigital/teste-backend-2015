@@ -68,7 +68,7 @@ php artisan db:seed
 
 #### Para rodar a aplicação:
 
-Para rodar a aplicação você pode acessar pela url configurada no virtual host ou pelo comando a baixo:
+Para rodar a aplicação você pode acessar pela url configurada no virtual host (melhor opção) ou pelo comando a baixo:
 ```bat
 php artisan serve
 ```
